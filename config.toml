@@ -1,0 +1,79 @@
+baseurl = "https://alond-david.github.io/"
+title = "Flakes"
+languageCode = "en-us"
+paginate     = 20
+theme = "hello-friend-ng"
+
+[params.author]
+  avatar = "avatar.jpg" # put the file in assets folder; also ensure that image has same height and width
+  # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
+  intro = "Software Flakes"
+  name = "Alon David"
+  description = "Scaling Distributed Software to Production"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Just a Simple Web about Software and Tech Flakes"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = true
+
+  # Metadata mostly used in document's head
+  description = "Msdfsdpage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  [[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/alond/"
+
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/alon-david/"
+
+  [[params.social]]
+  name = "medium"
+  url = "https://medium.com/@alondavid13"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Software Flakes"
+    subtitle = ""
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+  [languages.en.params.logo]
+    logoText = "Flakes"
+    logoHomeLink = "/"
+  # or
+  #
+  # path = "/img/your-example-logo.svg"
+  # alt = "Your example logo alt text"
+
+# And you can even create generic menu
+[[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/posts"
+
+[[menu.main]]
+  identifier = "about"
+  name       = "About"
+  url        = "/about"
